@@ -1,0 +1,13 @@
+<h2>Customer List Page</h2>
+
+<div class="leftalign">
+  <div class="card" style="width: 18rem;" *ngFor="let customer of customers">
+    <div class="card-body">
+      <h5 class="card-title">{{customer.name}}</h5>
+      <p class="card-text">{{customer.email}}</p>
+      <p class="card-text">{{customer.phone}}</p>
+
+      <a href="customerdetails/{{customer.id}}" class="btn btn-primary">Click for more details</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="card" *ngIf="customerDetails">
+  <div class="card-header">
+    Customer Details
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{customerDetails.name}}</h5>
+    <p class="card-text">Name : {{customerDetails.name}}</p>
+    <p class="card-text">Email : {{customerDetails.email}}</p>
+    <p class="card-text">Phone : {{customerDetails.phone}}</p>
+    <p class="card-text">City : {{customerDetails.city}}</p>
+    <p class="card-text">State : {{customerDetails.state}}</p>
+    <p class="card-text">Country : {{customerDetails.country}}</p>
+    <p class="card-text">Organization : {{customerDetails.organization}}</p>
+    <p class="card-text">Job Profile : {{customerDetails.jobProfile}}</p>
+    <p class="card-text">Additional Info : {{customerDetails.additionalInfo}}</p>
+    <a href="#" class="btn btn-primary">Go Back</a>
+  </div>
+</div>
