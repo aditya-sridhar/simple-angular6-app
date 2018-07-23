@@ -44,7 +44,7 @@ Open the project folder and install the npm packages using the following command
 npm install
 ```
 
-In Order the Run the Application Type the following command in command prompt
+In Order to Run the Application Type the following command in command prompt
 
 ```bash
 npm start
