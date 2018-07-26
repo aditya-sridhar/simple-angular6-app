@@ -1,6 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
 
-.leftalign {
-    padding: 10px;
+.centeralign {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.addmargin {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -7,6 +7,7 @@ This App is a Simple Angular 6 App which uses
 3. Angular Routing
 4. Services
 5. Very Basic Bootstrap
+6. Communication from parent to child component
 
 This Applications template can be copied and used to build other bigger applications.
 
@@ -59,6 +60,8 @@ The Components Created are
 1. **CustomersComponent** : This Component Is to Display the List of Customers
 
 2. **CustomerdetailsComponent** : This Component Displays the Details for a Single Selected Customer
+
+3. **DisplayComponent** : This Component Displays the Customer name Clicked in the *CustomersComponent* ( The whole point for this component is to demonstrate parent to child component communication ). This is a child component of *CustomersComponent*
 
 The Services Created are
 

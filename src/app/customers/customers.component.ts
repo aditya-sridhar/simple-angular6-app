@@ -9,6 +9,7 @@ import { Customer } from '../customer';
 })
 export class CustomersComponent implements OnInit {
   customers: Customer[] = [];
+  selectedCustomer : string = "temp";
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
@@ -19,8 +20,13 @@ export class CustomersComponent implements OnInit {
     this.dataService.getCustomerList().subscribe(
       (customers: Customer[]) => {
         this.customers = customers;
+        this.selectedCustomer = customers[0].name;
         console.log(customers)
       });
+  }
+
+  setSelectedCustomer( cust : string ): void {
+    this.selectedCustomer = cust ;
   }
 
 }
