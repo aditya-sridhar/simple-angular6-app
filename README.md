@@ -19,6 +19,11 @@ This Application has just two pages.
 1. A Customer List Page which Lists out all the Customers
 2. A Customer Details Page which will display the Details for the Selected Customer
 
+## Live Application url
+
+The Application is deployed in https://aditya-sridhar.github.io/simple-angular6-app/
+
+
 ## Prerequites to Run the Application
 
 ### Install NodeJS
