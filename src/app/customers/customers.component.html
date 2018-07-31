@@ -10,7 +10,7 @@
       <p class="card-text">{{customer.email}}</p>
       <p class="card-text">{{customer.phone}}</p>
 
-      <a href="customerdetails/{{customer.id}}" class="btn btn-primary">Click for more details</a>
+      <a (click)=goToDetailsPage(customer.id) class="btn btn-primary">Click for more details</a>
     </div>
   </div>
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CustomerDetails } from '../customerdetails'
 import { DataService } from '../data.service'
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-customerdetails',
@@ -11,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CustomerdetailsComponent implements OnInit {
   customerDetails: CustomerDetails = null;
 
-  constructor(private dataService: DataService, private activeRoute: ActivatedRoute) { }
+  constructor(private dataService: DataService, private activeRoute: ActivatedRoute, private router : Router) { }
 
   ngOnInit() {
     this.getCustomerDetails();
@@ -29,6 +30,10 @@ export class CustomerdetailsComponent implements OnInit {
 
     });
 
+  }
+
+  goToCustomerPage() : void {
+    this.router.navigateByUrl("/customers");
   }
 
 }

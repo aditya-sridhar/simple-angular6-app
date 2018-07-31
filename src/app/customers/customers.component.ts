@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service'
 import { Customer } from '../customer';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-customers',
@@ -10,7 +11,7 @@ import { Customer } from '../customer';
 export class CustomersComponent implements OnInit {
   customers: Customer[] = [];
   selectedCustomer : string = "temp";
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private router:Router) { }
 
   ngOnInit() {
     this.getCustomerList();
@@ -27,6 +28,10 @@ export class CustomersComponent implements OnInit {
 
   setSelectedCustomer( cust : string ): void {
     this.selectedCustomer = cust ;
+  }
+
+  goToDetailsPage(id : number) : void {
+    this.router.navigateByUrl("/customerdetails/"+id);
   }
 
 }
