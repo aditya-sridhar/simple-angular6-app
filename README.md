@@ -13,6 +13,11 @@ This Applications template can be copied and used to build other bigger applicat
 
 The CSS used is very basic since the main aim of this project is to focus on angular 6
 
+## Live Application url
+
+### https://aditya-sridhar.github.io/simple-angular6-app/
+This is the link where the app is deployed. 
+
 ## What Does this Application do
 
 This Application has just two pages.
