@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gitpagebuild": "ng build --prod --base-href \"https://aditya-sridhar.github.io/simple-angular6-app/\"",
+    "gitpagebuild": "ng build --prod --base-href \"https://adityasridhar.com/simple-angular6-app/\"",
     "predeploy": "npm run gitpagebuild",
     "deploy": "gh-pages -d dist/angular6-client"
   },
